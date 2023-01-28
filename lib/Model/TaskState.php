@@ -72,6 +72,8 @@ class TaskState
 
     public const ORPHANED = 'orphaned';
 
+    public const UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -93,7 +95,8 @@ class TaskState
             self::FAILED,
             self::REJECTED,
             self::REMOVE,
-            self::ORPHANED
+            self::ORPHANED,
+            self::UNKNOWN_DEFAULT_OPEN_API
         ];
     }
 }

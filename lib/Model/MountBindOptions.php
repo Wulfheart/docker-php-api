@@ -241,6 +241,7 @@ class MountBindOptions implements ModelInterface, ArrayAccess, \JsonSerializable
     public const PROPAGATION_RSHARED = 'rshared';
     public const PROPAGATION_SLAVE = 'slave';
     public const PROPAGATION_RSLAVE = 'rslave';
+    public const PROPAGATION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -256,6 +257,7 @@ class MountBindOptions implements ModelInterface, ArrayAccess, \JsonSerializable
             self::PROPAGATION_RSHARED,
             self::PROPAGATION_SLAVE,
             self::PROPAGATION_RSLAVE,
+            self::PROPAGATION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

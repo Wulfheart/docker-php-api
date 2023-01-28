@@ -289,6 +289,7 @@ class BuildCache implements ModelInterface, ArrayAccess, \JsonSerializable
     public const TYPE_SOURCE_GIT_CHECKOUT = 'source.git.checkout';
     public const TYPE_EXEC_CACHEMOUNT = 'exec.cachemount';
     public const TYPE_REGULAR = 'regular';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -304,6 +305,7 @@ class BuildCache implements ModelInterface, ArrayAccess, \JsonSerializable
             self::TYPE_SOURCE_GIT_CHECKOUT,
             self::TYPE_EXEC_CACHEMOUNT,
             self::TYPE_REGULAR,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

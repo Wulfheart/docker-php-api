@@ -240,6 +240,7 @@ class RestartPolicy implements ModelInterface, ArrayAccess, \JsonSerializable
     public const NAME_ALWAYS = 'always';
     public const NAME_UNLESS_STOPPED = 'unless-stopped';
     public const NAME_ON_FAILURE = 'on-failure';
+    public const NAME_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -254,6 +255,7 @@ class RestartPolicy implements ModelInterface, ArrayAccess, \JsonSerializable
             self::NAME_ALWAYS,
             self::NAME_UNLESS_STOPPED,
             self::NAME_ON_FAILURE,
+            self::NAME_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

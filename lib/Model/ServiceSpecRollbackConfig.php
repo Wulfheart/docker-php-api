@@ -261,8 +261,10 @@ class ServiceSpecRollbackConfig implements ModelInterface, ArrayAccess, \JsonSer
 
     public const FAILURE_ACTION__CONTINUE = 'continue';
     public const FAILURE_ACTION_PAUSE = 'pause';
+    public const FAILURE_ACTION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ORDER_STOP_FIRST = 'stop-first';
     public const ORDER_START_FIRST = 'start-first';
+    public const ORDER_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -274,6 +276,7 @@ class ServiceSpecRollbackConfig implements ModelInterface, ArrayAccess, \JsonSer
         return [
             self::FAILURE_ACTION__CONTINUE,
             self::FAILURE_ACTION_PAUSE,
+            self::FAILURE_ACTION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -287,6 +290,7 @@ class ServiceSpecRollbackConfig implements ModelInterface, ArrayAccess, \JsonSer
         return [
             self::ORDER_STOP_FIRST,
             self::ORDER_START_FIRST,
+            self::ORDER_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

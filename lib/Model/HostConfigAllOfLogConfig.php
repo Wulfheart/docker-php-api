@@ -244,6 +244,7 @@ class HostConfigAllOfLogConfig implements ModelInterface, ArrayAccess, \JsonSeri
     public const TYPE_SPLUNK = 'splunk';
     public const TYPE_ETWLOGS = 'etwlogs';
     public const TYPE_NONE = 'none';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -262,6 +263,7 @@ class HostConfigAllOfLogConfig implements ModelInterface, ArrayAccess, \JsonSeri
             self::TYPE_SPLUNK,
             self::TYPE_ETWLOGS,
             self::TYPE_NONE,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

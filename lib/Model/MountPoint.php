@@ -275,6 +275,7 @@ class MountPoint implements ModelInterface, ArrayAccess, \JsonSerializable
     public const TYPE_VOLUME = 'volume';
     public const TYPE_TMPFS = 'tmpfs';
     public const TYPE_NPIPE = 'npipe';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -288,6 +289,7 @@ class MountPoint implements ModelInterface, ArrayAccess, \JsonSerializable
             self::TYPE_VOLUME,
             self::TYPE_TMPFS,
             self::TYPE_NPIPE,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

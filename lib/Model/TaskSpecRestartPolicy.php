@@ -250,6 +250,7 @@ class TaskSpecRestartPolicy implements ModelInterface, ArrayAccess, \JsonSeriali
     public const CONDITION_NONE = 'none';
     public const CONDITION_ON_FAILURE = 'on-failure';
     public const CONDITION_ANY = 'any';
+    public const CONDITION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -262,6 +263,7 @@ class TaskSpecRestartPolicy implements ModelInterface, ArrayAccess, \JsonSeriali
             self::CONDITION_NONE,
             self::CONDITION_ON_FAILURE,
             self::CONDITION_ANY,
+            self::CONDITION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

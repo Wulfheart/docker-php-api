@@ -278,6 +278,7 @@ class Volume implements ModelInterface, ArrayAccess, \JsonSerializable
 
     public const SCOPE_LOCAL = 'local';
     public const SCOPE__GLOBAL = 'global';
+    public const SCOPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -289,6 +290,7 @@ class Volume implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::SCOPE_LOCAL,
             self::SCOPE__GLOBAL,
+            self::SCOPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

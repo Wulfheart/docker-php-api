@@ -250,6 +250,7 @@ class Port implements ModelInterface, ArrayAccess, \JsonSerializable
     public const TYPE_TCP = 'tcp';
     public const TYPE_UDP = 'udp';
     public const TYPE_SCTP = 'sctp';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -262,6 +263,7 @@ class Port implements ModelInterface, ArrayAccess, \JsonSerializable
             self::TYPE_TCP,
             self::TYPE_UDP,
             self::TYPE_SCTP,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

@@ -250,6 +250,7 @@ class ServiceUpdateStatus implements ModelInterface, ArrayAccess, \JsonSerializa
     public const STATE_UPDATING = 'updating';
     public const STATE_PAUSED = 'paused';
     public const STATE_COMPLETED = 'completed';
+    public const STATE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -262,6 +263,7 @@ class ServiceUpdateStatus implements ModelInterface, ArrayAccess, \JsonSerializa
             self::STATE_UPDATING,
             self::STATE_PAUSED,
             self::STATE_COMPLETED,
+            self::STATE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

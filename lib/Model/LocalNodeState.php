@@ -55,6 +55,8 @@ class LocalNodeState
 
     public const LOCKED = 'locked';
 
+    public const UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -67,7 +69,8 @@ class LocalNodeState
             self::PENDING,
             self::ACTIVE,
             self::ERROR,
-            self::LOCKED
+            self::LOCKED,
+            self::UNKNOWN_DEFAULT_OPEN_API
         ];
     }
 }

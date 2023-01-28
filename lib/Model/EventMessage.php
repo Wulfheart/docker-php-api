@@ -270,8 +270,10 @@ class EventMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     public const TYPE_SECRET = 'secret';
     public const TYPE_SERVICE = 'service';
     public const TYPE_VOLUME = 'volume';
+    public const TYPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const SCOPE_LOCAL = 'local';
     public const SCOPE_SWARM = 'swarm';
+    public const SCOPE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -292,6 +294,7 @@ class EventMessage implements ModelInterface, ArrayAccess, \JsonSerializable
             self::TYPE_SECRET,
             self::TYPE_SERVICE,
             self::TYPE_VOLUME,
+            self::TYPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -305,6 +308,7 @@ class EventMessage implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::SCOPE_LOCAL,
             self::SCOPE_SWARM,
+            self::SCOPE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

@@ -645,9 +645,11 @@ class HostConfig implements ModelInterface, ArrayAccess, \JsonSerializable
 
     public const CGROUPNS_MODE__PRIVATE = 'private';
     public const CGROUPNS_MODE_HOST = 'host';
+    public const CGROUPNS_MODE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ISOLATION__DEFAULT = 'default';
     public const ISOLATION_PROCESS = 'process';
     public const ISOLATION_HYPERV = 'hyperv';
+    public const ISOLATION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -659,6 +661,7 @@ class HostConfig implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::CGROUPNS_MODE__PRIVATE,
             self::CGROUPNS_MODE_HOST,
+            self::CGROUPNS_MODE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -673,6 +676,7 @@ class HostConfig implements ModelInterface, ArrayAccess, \JsonSerializable
             self::ISOLATION__DEFAULT,
             self::ISOLATION_PROCESS,
             self::ISOLATION_HYPERV,
+            self::ISOLATION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

@@ -603,11 +603,14 @@ class SystemInfo implements ModelInterface, ArrayAccess, \JsonSerializable
     public const CGROUP_DRIVER_CGROUPFS = 'cgroupfs';
     public const CGROUP_DRIVER_SYSTEMD = 'systemd';
     public const CGROUP_DRIVER_NONE = 'none';
+    public const CGROUP_DRIVER_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const CGROUP_VERSION__1 = '1';
     public const CGROUP_VERSION__2 = '2';
+    public const CGROUP_VERSION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const ISOLATION__DEFAULT = 'default';
     public const ISOLATION_HYPERV = 'hyperv';
     public const ISOLATION_PROCESS = 'process';
+    public const ISOLATION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -620,6 +623,7 @@ class SystemInfo implements ModelInterface, ArrayAccess, \JsonSerializable
             self::CGROUP_DRIVER_CGROUPFS,
             self::CGROUP_DRIVER_SYSTEMD,
             self::CGROUP_DRIVER_NONE,
+            self::CGROUP_DRIVER_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -633,6 +637,7 @@ class SystemInfo implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::CGROUP_VERSION__1,
             self::CGROUP_VERSION__2,
+            self::CGROUP_VERSION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -647,6 +652,7 @@ class SystemInfo implements ModelInterface, ArrayAccess, \JsonSerializable
             self::ISOLATION__DEFAULT,
             self::ISOLATION_HYPERV,
             self::ISOLATION_PROCESS,
+            self::ISOLATION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

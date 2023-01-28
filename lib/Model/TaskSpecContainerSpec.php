@@ -388,6 +388,7 @@ class TaskSpecContainerSpec implements ModelInterface, ArrayAccess, \JsonSeriali
     public const ISOLATION__DEFAULT = 'default';
     public const ISOLATION_PROCESS = 'process';
     public const ISOLATION_HYPERV = 'hyperv';
+    public const ISOLATION_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -400,6 +401,7 @@ class TaskSpecContainerSpec implements ModelInterface, ArrayAccess, \JsonSeriali
             self::ISOLATION__DEFAULT,
             self::ISOLATION_PROCESS,
             self::ISOLATION_HYPERV,
+            self::ISOLATION_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

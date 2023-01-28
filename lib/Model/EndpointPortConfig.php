@@ -255,8 +255,10 @@ class EndpointPortConfig implements ModelInterface, ArrayAccess, \JsonSerializab
     public const PROTOCOL_TCP = 'tcp';
     public const PROTOCOL_UDP = 'udp';
     public const PROTOCOL_SCTP = 'sctp';
+    public const PROTOCOL_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const PUBLISH_MODE_INGRESS = 'ingress';
     public const PUBLISH_MODE_HOST = 'host';
+    public const PUBLISH_MODE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -269,6 +271,7 @@ class EndpointPortConfig implements ModelInterface, ArrayAccess, \JsonSerializab
             self::PROTOCOL_TCP,
             self::PROTOCOL_UDP,
             self::PROTOCOL_SCTP,
+            self::PROTOCOL_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -282,6 +285,7 @@ class EndpointPortConfig implements ModelInterface, ArrayAccess, \JsonSerializab
         return [
             self::PUBLISH_MODE_INGRESS,
             self::PUBLISH_MODE_HOST,
+            self::PUBLISH_MODE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

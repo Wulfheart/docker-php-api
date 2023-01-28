@@ -49,6 +49,8 @@ class Reachability
 
     public const REACHABLE = 'reachable';
 
+    public const UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
+
     /**
      * Gets allowable values of the enum
      * @return string[]
@@ -58,7 +60,8 @@ class Reachability
         return [
             self::UNKNOWN,
             self::UNREACHABLE,
-            self::REACHABLE
+            self::REACHABLE,
+            self::UNKNOWN_DEFAULT_OPEN_API
         ];
     }
 }

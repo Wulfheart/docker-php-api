@@ -237,6 +237,7 @@ class EndpointSpec implements ModelInterface, ArrayAccess, \JsonSerializable
 
     public const MODE_VIP = 'vip';
     public const MODE_DNSRR = 'dnsrr';
+    public const MODE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -248,6 +249,7 @@ class EndpointSpec implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::MODE_VIP,
             self::MODE_DNSRR,
+            self::MODE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

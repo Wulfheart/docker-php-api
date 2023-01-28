@@ -245,6 +245,7 @@ class Health implements ModelInterface, ArrayAccess, \JsonSerializable
     public const STATUS_STARTING = 'starting';
     public const STATUS_HEALTHY = 'healthy';
     public const STATUS_UNHEALTHY = 'unhealthy';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -258,6 +259,7 @@ class Health implements ModelInterface, ArrayAccess, \JsonSerializable
             self::STATUS_STARTING,
             self::STATUS_HEALTHY,
             self::STATUS_UNHEALTHY,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

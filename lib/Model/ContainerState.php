@@ -302,6 +302,7 @@ class ContainerState implements ModelInterface, ArrayAccess, \JsonSerializable
     public const STATUS_REMOVING = 'removing';
     public const STATUS_EXITED = 'exited';
     public const STATUS_DEAD = 'dead';
+    public const STATUS_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -318,6 +319,7 @@ class ContainerState implements ModelInterface, ArrayAccess, \JsonSerializable
             self::STATUS_REMOVING,
             self::STATUS_EXITED,
             self::STATUS_DEAD,
+            self::STATUS_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

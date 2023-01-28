@@ -243,6 +243,7 @@ class PluginConfigInterface implements ModelInterface, ArrayAccess, \JsonSeriali
 
     public const PROTOCOL_SCHEME_EMPTY = '';
     public const PROTOCOL_SCHEME_MOBY_PLUGINS_HTTP_V1 = 'moby.plugins.http/v1';
+    public const PROTOCOL_SCHEME_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -254,6 +255,7 @@ class PluginConfigInterface implements ModelInterface, ArrayAccess, \JsonSeriali
         return [
             self::PROTOCOL_SCHEME_EMPTY,
             self::PROTOCOL_SCHEME_MOBY_PLUGINS_HTTP_V1,
+            self::PROTOCOL_SCHEME_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

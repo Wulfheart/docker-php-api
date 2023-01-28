@@ -248,9 +248,11 @@ class NodeSpec implements ModelInterface, ArrayAccess, \JsonSerializable
 
     public const ROLE_WORKER = 'worker';
     public const ROLE_MANAGER = 'manager';
+    public const ROLE_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
     public const AVAILABILITY_ACTIVE = 'active';
     public const AVAILABILITY_PAUSE = 'pause';
     public const AVAILABILITY_DRAIN = 'drain';
+    public const AVAILABILITY_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -262,6 +264,7 @@ class NodeSpec implements ModelInterface, ArrayAccess, \JsonSerializable
         return [
             self::ROLE_WORKER,
             self::ROLE_MANAGER,
+            self::ROLE_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
@@ -276,6 +279,7 @@ class NodeSpec implements ModelInterface, ArrayAccess, \JsonSerializable
             self::AVAILABILITY_ACTIVE,
             self::AVAILABILITY_PAUSE,
             self::AVAILABILITY_DRAIN,
+            self::AVAILABILITY_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 

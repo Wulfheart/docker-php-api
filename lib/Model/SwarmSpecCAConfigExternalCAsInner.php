@@ -247,6 +247,7 @@ class SwarmSpecCAConfigExternalCAsInner implements ModelInterface, ArrayAccess, 
     }
 
     public const PROTOCOL_CFSSL = 'cfssl';
+    public const PROTOCOL_UNKNOWN_DEFAULT_OPEN_API = 'unknown_default_open_api';
 
     /**
      * Gets allowable values of the enum
@@ -257,6 +258,7 @@ class SwarmSpecCAConfigExternalCAsInner implements ModelInterface, ArrayAccess, 
     {
         return [
             self::PROTOCOL_CFSSL,
+            self::PROTOCOL_UNKNOWN_DEFAULT_OPEN_API,
         ];
     }
 
